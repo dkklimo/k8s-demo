@@ -13,6 +13,8 @@ spec:
       labels:
         app: demo-app
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
         - name: demo-app
           image: dkklimo/k8s-demo-app:2.0
